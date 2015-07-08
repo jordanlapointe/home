@@ -1,0 +1,22 @@
+/*================================================
+ Themes (t)
+==================================================
+ Sets background and text colors for an element
+ and its descendants.
+================================================*/
+.t-dark {
+	background-color: $color-secondary;
+	color: #fff;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+}
+.t-light {
+    background-color: #fff;
+}

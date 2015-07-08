@@ -1,0 +1,75 @@
+/*================================================
+ Layout (l)
+==================================================
+ Cached values to be used throughout the project.
+================================================*/
+
+/*== Spacing Top ==*/
+.l-top-0x   { margin-top: 0; }
+.l-top-half { margin-top: $spacing-half; }
+.l-top-1x   { margin-top: $spacing-1x; }
+.l-top-2x   { margin-top: $spacing-2x; }
+.l-top-4x   { margin-top: $spacing-4x; }
+.l-top-8x   { margin-top: $spacing-8x; }
+
+/*== Spacing Bottom ==*/
+.l-bottom-0x   { margin-bottom: 0; }
+.l-bottom-half { margin-bottom: $spacing-half; }
+.l-bottom-1x   { margin-bottom: $spacing-1x; }
+.l-bottom-2x   { margin-bottom: $spacing-2x; }
+.l-bottom-4x   { margin-bottom: $spacing-4x; }
+.l-bottom-8x   { margin-bottom: $spacing-8x; }
+
+/*== Padding Top ==*/
+.l-pad-top-half { padding-top: $spacing-half; }
+.l-pad-top-1x   { padding-top: $spacing-1x; }
+.l-pad-top-2x   { padding-top: $spacing-2x; }
+.l-pad-top-4x   { padding-top: $spacing-4x; }
+.l-pad-top-8x   { padding-top: $spacing-8x; }
+
+/*== Padding Bottom ==*/
+.l-pad-bottom-half { padding-bottom: $spacing-half; }
+.l-pad-bottom-1x   { padding-bottom: $spacing-1x; }
+.l-pad-bottom-2x   { padding-bottom: $spacing-2x; }
+.l-pad-bottom-4x   { padding-bottom: $spacing-4x; }
+.l-pad-bottom-8x   { padding-bottom: $spacing-8x; }
+
+/*== Horizontal Alignment ==*/
+.l-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.l-left {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*== Wrappers ==*/
+.l-wrap-wide,
+.l-wrap-wider,
+.l-wrap-widist {
+	max-width: 300px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include bp(min-s) {
+		max-width: $width-s - 24px;
+	}
+	@include bp(min-m) {
+		max-width: $width-m - 36px;
+	}
+	@include bp(min-l) {
+		max-width: $width-l - 48px;
+	}
+}
+.l-wrap-wider {
+	@include bp(min-xl) {
+		max-width: $width-xl - 48px;
+	}
+}
+.l-wrap-s {
+	max-width: $width-s - 24px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,130 @@
+/*================================================
+ Buttons (btn)
+==================================================
+ Global button styles.
+================================================*/
+
+/*== Buttons ==*/
+.btn-primary,
+.btn-secondary,
+.btn-tertiary,
+[type=submit] {
+	display: inline-block;
+	border: solid $spacing-quarter $color-primary;
+	padding: 0 $spacing-1x;
+	border-radius: $corners-m;
+	font-size: $font-m;
+	line-height: 2;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+
+	&:focus {
+		outline: none;
+	}
+	input + & {
+		margin-top: $spacing-1x;
+	}
+	&[disabled] {
+		background-color: $color-grey;
+		border-color: $color-grey;
+		color: rgba(0,0,0,.5);
+		cursor: default;
+		text-shadow: none;
+
+		&:hover {
+			border-color: $color-grey;
+		}
+	}
+}
+.btn-primary {
+	background-color: $color-primary;
+	border-color: $color-primary;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+	.t-dark & {
+		&:hover,
+		&:focus {
+			border-color: lighten($color-primary, 20%);
+		}
+		&:focus {
+			box-shadow: 0 0 0 3px rgba(0,0,0,.3);
+		}
+	}
+	&:hover,
+	&:focus {
+		border-color: darken($color-primary, 9%);
+	}
+	&:focus {
+		box-shadow: 0 0 0 3px $color-primary;
+	}
+}
+.btn-secondary {
+	background-color: $color-secondary;
+	border-color: $color-secondary;
+
+	&:hover,
+	&:focus {
+		border-color: darken($color-secondary, 9%);
+	}
+	&:focus {
+		box-shadow: 0 0 0 3px $color-secondary;
+	}
+}
+.btn-tertiary {
+	background-color: transparent;
+	color: $color-grey;
+	border-color: rgba(255,255,255,.1);
+
+	.t-dark & {
+		color: #fff;
+		border-color: rgba(255,255,255,.2);
+
+		&:hover,
+		&:focus {
+			border-color: rgba(255,255,255,.4);
+		}
+		&:focus {
+			box-shadow: 0 0 0 3px rgba(0,0,0,.3);
+		}
+	}
+	&:hover,
+	&:focus {
+		border-color: rgba(255,255,255,.3);
+	}
+	&:focus {
+		box-shadow: 0 0 0 3px rgba(255,255,255,.5);
+	}
+}
+.btn-full {
+	display: block;
+	width: 100%;
+}
+.btn-bare,
+.btn-text-only {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.btn-text-only {
+	color: $color-primary;
+	font-size: 1em;
+	line-height: inherit;
+
+	&:hover {
+		text-decoration: underline;
+	}
+	.t-dark & {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+.btn-s {
+    padding-left: $spacing-half;
+    padding-right: $spacing-half;
+    font-size: $font-s;
+}
