@@ -1,5 +1,5 @@
 {
-    "name": "Jordan LaPointe",
+    "name": "home",
     "version": "0.1.0",
     "description": "",
     "repository": {
@@ -12,7 +12,7 @@
     "authors": [
         "Jordan LaPointe <hello@jordanlapointe.com>"
     ],
-    "license": "All rights reserved",
+    "license": "",
     "private": false,
     "devDependencies": {
         "del": "^1.2.0",
