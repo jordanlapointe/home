@@ -1,0 +1,25 @@
+/*================================================
+ Homepage Intro (hi)
+==================================================
+ Topmost page header found on most pages.
+================================================*/
+
+.hi-wrap {
+  padding: $spacing-4x $spacing-1x;
+  background-color: $color-secondary;
+  color: #fff;
+
+  @include bp(min-l) {
+
+  }
+}
+.hi-wrap-inner {
+
+}
+.hi-title {
+  display: inline-block;
+  margin-bottom: $spacing-2x;
+  font-size: $font-xxl;
+  color: #fff;
+  font-weight: 200;
+}

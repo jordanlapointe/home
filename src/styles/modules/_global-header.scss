@@ -5,6 +5,17 @@
 ================================================*/
 
 .gh-wrap {
-  padding: $spacing-1x 0;
+  padding-top: $spacing-2x;
+  padding-bottom: $spacing-2x;
   text-align: center;
+
+  @include bp(min-l) {
+
+  }
+  a {
+    color: $color-grey-dark;
+  }
+}
+.gh-logo-link {
+
 }

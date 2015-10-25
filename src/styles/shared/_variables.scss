@@ -10,6 +10,7 @@ $font-m:   1rem;    // 16px
 $font-l:   1.25rem; // 20px
 $font-xl:  1.5rem;  // 24px
 $font-xxl: 2.25rem; // 36px
+$font-xxxl: 3rem;    // 48px
 
 /*== Vertical Spacing ==*/
 $spacing-quarter: 0.1875rem; // 6px
@@ -29,14 +30,15 @@ $width-xl:  800px;
 $width-xxl: 1000px;
 
 /*== Colors ==*/
-$color-primary:    #B22D26; // Red
-$color-secondary:  #3C844B; // Green
-$color-grey:       #a7a9ac;
-$color-grey-light: #cccccc;
-$color-grey-dark:  #3B3840;
-$color-offwhite:   #FAF9F8;
-$color-warning:    #FC440F; // Orange
-$color-info:       #4A99F7; // Blue
+$color-primary:      #B22D26; // Red
+$color-secondary:    #0093FF; // Green
+$color-grey:         #a7a9ac;
+$color-grey-light:   #cccccc;
+$color-grey-lighter: #eeeeee;
+$color-grey-dark:    #3B3840;
+$color-offwhite:     #FAF9F8;
+$color-warning:      #FC440F; // Orange
+$color-info:         #4A99F7; // Blue
 
 /*== Corners ==*/
 $corners-s:      2px;
