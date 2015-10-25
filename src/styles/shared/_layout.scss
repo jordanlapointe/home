@@ -45,7 +45,8 @@
 }
 
 /*== Wrappers ==*/
-.l-wrap {
+.l-wrap-m,
+.l-wrap-l {
 	max-width: 300px;
 	width: 100%;
 	margin-left: auto;
@@ -59,5 +60,10 @@
 	}
 	@include bp(min-l) {
 		max-width: $width-l - 48px;
+	}
+}
+.l-wrap-l {
+	@include bp(min-xl) {
+		max-width: $width-xl - 48px;
 	}
 }
