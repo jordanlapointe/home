@@ -1,33 +1,33 @@
 /*================================================
- Reset
+Reset
 ==================================================
- Normalizes default browser styling.
+Normalizes default browser styling.
 ================================================*/
 
 /*== Document ==*/
 * {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 html,
 body {
-	margin: 0;
+  margin: 0;
 }
 html {
-	font-size: 16px;
+  font-size: 16px;
 
-	@include bp(min-s) {
-		font-size: 20px;
-	}
-	@include bp(min-m) {
-		font-size: 22px;
-	}
+  @include bp(min-s) {
+    font-size: 20px;
+  }
+  @include bp(min-m) {
+    font-size: 22px;
+  }
 }
 body {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	box-sizing: border-box;
-	background-color: $color-offwhite;
-	color: $color-grey-dark;
-	line-height: 1.5;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: $color-offwhite;
+  color: $color-grey-dark;
+  line-height: 1.5;
 }
 
 /*== Tables ==*/
@@ -35,28 +35,28 @@ table,
 td,
 tr,
 th {
-	padding: 0;
-	margin: 0;
-	border: none;
-	border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-spacing: 0;
 }
 table {
-	width: 100%;
+  width: 100%;
 }
 th {
-	text-align: left;
+  text-align: left;
 }
 td,
 th {
-	line-height: inherit;
+  line-height: inherit;
 }
 
 /*== Text ==*/
 p {
-	margin: 0;
+  margin: 0;
 }
 p + p {
-	margin-top: $spacing-1x;
+  margin-top: $spacing-1x;
 }
 h1,
 h2,
@@ -64,42 +64,42 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: $font-l;
-	font-weight: 400;
-	margin: 0;
-	line-height: 1.2;
-    color: $color-secondary;
+  font-size: $font-l;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+  color: $color-secondary;
 }
 h1 {
   margin-bottom: $spacing-half; // Might be too general?
 }
 p,
 span {
-	line-height: inherit;
+  line-height: inherit;
 }
 
 /*== Images ==*/
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*== Lists ==*/
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*== Link ==*/
 a {
-	color: $color-primary;
+  color: $color-primary;
 }
 
 /*== Forms ==*/
 form {
-	display: block;
+  display: block;
 }
 [type=text],
 [type=email],
@@ -107,65 +107,65 @@ form {
 [type=password],
 [type=date],
 textarea {
-	display: block;
-	width: 100%;
-	height: 2.25rem;
-	padding: 0 $spacing-half;
-	border: solid 2px $color-grey;
-	border-radius: $corners-m;
-	box-shadow: 0 2px 4px rgba(0,0,0,.25) inset;
-	font-size: 1rem;
-	font-family: inherit;
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+  padding: 0 $spacing-half;
+  border: solid 2px $color-grey;
+  border-radius: $corners-m;
+  box-shadow: 0 2px 4px rgba(0,0,0,.25) inset;
+  font-size: 1rem;
+  font-family: inherit;
 
-	& + & {
-		margin-top: $spacing-1x;
-	}
-	&:focus {
-		border-color: $color-primary;
-		outline: none;
-	}
-    &[disabled] {
-        background-color: $color-offwhite;
-    }
-    &[readonly] {
-        .t-dark & {
-            background-color: rgba(0,0,0,.33);
-            color: #fff;
-            border: none;
+  & + & {
+    margin-top: $spacing-1x;
+  }
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+  }
+  &[disabled] {
+    background-color: $color-offwhite;
+  }
+  &[readonly] {
+    .t-dark & {
+      background-color: rgba(0,0,0,.33);
+      color: #fff;
+      border: none;
 
-            &:focus {
-                box-shadow:
-                    0 2px 4px rgba(0,0,0,.25) inset,
-                    0 0 0 2px rgba(255,255,255,.33);
-            }
-        }
+      &:focus {
+        box-shadow:
+        0 2px 4px rgba(0,0,0,.25) inset,
+        0 0 0 2px rgba(255,255,255,.33);
+      }
     }
+  }
 }
 textarea {
-	padding-top: $spacing-half;
-	padding-bottom: $spacing-half;
+  padding-top: $spacing-half;
+  padding-bottom: $spacing-half;
 }
 label {
-	display: inline-block;
+  display: inline-block;
 
-	input + & {
-		margin-top: $spacing-1x;
-	}
+  input + & {
+    margin-top: $spacing-1x;
+  }
 }
 abbr {
-	border-bottom: dotted 1px currentColor;
+  border-bottom: dotted 1px currentColor;
 }
 
 /*== Hide elements as marked by Angular ==*/
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-	display: none !important;
+  display: none !important;
 }
 
 /*== Default Focus State ==*/
 :focus {
-	outline: dotted 1px currentColor;
+  outline: dotted 1px currentColor;
 
-	&:active {
-		outline-color: transparent;
-	}
+  &:active {
+    outline-color: transparent;
+  }
 }
