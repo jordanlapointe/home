@@ -7,11 +7,11 @@
   <title>Jordan LaPointe — Front-end developer and designer</title>
   <style>
     html {
-      background-color: #F2F2F2;
-      color: #0E1B2B;
+      background-color: #f2f2f2;
+      color: rgba(0, 0, 0, 0.87);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-size: 18px;
-      line-height: 1.4;
+      font-size: 16px;
+      line-height: 1.5;
     }
     body {
       margin: 0;
@@ -19,11 +19,21 @@
     p,
     h1,
     h2,
+    h3,
+    ul {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+    h1,
+    h2,
     h3 {
-      margin: 0.25em 0;
+      font-weight: 400;
     }
     a {
-      color: #3F6F8C;
+      color: #3f6f8c;
+    }
+    a:hover {
+      color: #000;
     }
     .intro {
       -webkit-box-pack: center;
@@ -38,12 +48,31 @@
       flex-direction: column;
       margin-left: auto;
       margin-right: auto;
-      max-width: 30rem;
-      min-height: 100vh;
+      max-width: 28rem;
+      min-height: 75vh;
       text-align: center;
     }
     .intro__title {
-
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    .intro__tagline {
+      color: rgba(0, 0, 0, 0.54);
+      margin-top: 0;
+    }
+    .calls-to-action {
+      list-style: none;
+      margin-top: 1rem;
+      padding-left: 0;
+    }
+    .calls-to-action__item + .calls-to-action__item {
+      margin-top: 0.25rem;
+    }
+    .calls-to-action__link {
+      text-decoration: none;
+    }
+    .calls-to-action__link::after {
+      content: '›';
     }
   </style>
 </head>
@@ -58,16 +87,18 @@
     <p>
       I work with small teams to create useful online experiences. I believe in close communication, fast iteration, maintainable code and thoughtful design.
     </p>
-    <p>
-      <a href="mailto:hello@jordanlapointe.com">
-        hello@jordanlapointe.com
-      </a>
-    </p>
-    <p>
-      <a href="jordan_lapointe-resume.docx">
-        Résumé (.doc)
-      </a>
-    </p>
+    <ul class="calls-to-action">
+      <li class="calls-to-action__item">
+        <a class="calls-to-action__link" href="mailto:hello@jordanlapointe.com">
+          Email
+        </a>
+      </li>
+      <li class="calls-to-action__item">
+        <a class="calls-to-action__link" href="jordan_lapointe-resume.docx">
+          View Résumé
+        </a>
+      </li>
+    </ul>
   </div>
 </body>
 </html>
